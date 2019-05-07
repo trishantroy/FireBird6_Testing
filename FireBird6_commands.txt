@@ -1,0 +1,47 @@
+Front Motion
+cmd2=[hex2dec('7E'),00,10, 01, 00, 00, 00 , 00, 78, 69, 88, 148, 01,-130];
+
+Backward Motion
+cmd1=[hex2dec('7E'),00,10, 01, 00, 00, 00 , 00, 78, 69, 88, 148, 02,-131];
+
+Left turn
+cmd3=[hex2dec('7E'),00,10, 01, 00, 00, 00 , 00, 78, 69, 88, 148, 03,-132];
+
+Rigth turn
+cmd4=[hex2dec('7E'),00,10, 01, 00, 00, 00 , 00, 78, 69, 88, 148, 04,-133];
+
+Stop
+cmd6=[hex2dec('7E'),00,10, 01, 00, 00, 00 , 00, 78, 69, 88, 148, 06,-135];
+
+Set velocity left
+cmdl=[hex2dec('7E'),00,10, 01, 00, 00, 00 , 00, 78, 69, 88, 149, 180,-310];
+
+Set velocity right
+cmdr=[hex2dec('7E'),00,10, 01, 00, 00, 00 , 00, 78, 69, 88, 150, 180,-311]
+
+Mode set
+cmdm=[hex2dec('7E'),00,10, 01, 00, 00, 00 , 00, 78, 69, 88, 144, 1,-126];
+
+Get Left wheel velocity
+cmdlv=[hex2dec('7E'),00,10, 01, 00, 00, 00 , 00, 78, 69, 88, 154, 00,-135];
+
+Get Right wheel velocity
+cmdrv=[hex2dec('7E'),00,10, 01, 00, 00, 00 , 00, 78, 69, 88, 155, 00,-136];
+
+Get left motor current
+cmdlmi=[hex2dec('7E'),00,10, 01, 00, 00, 00 , 00, 78, 69, 88, 151, 01,-133];
+
+Get right motor current
+cmdrmi=[hex2dec('7E'),00,10, 01, 00, 00, 00 , 00, 78, 69, 88, 151, 02,-134];
+
+Safety mode off
+cmdsafe=[hex2dec('7E'),00,10, 01, 00, 00, 00 , 00, 78, 69, 88, 137, 0,-118];
+
+Left encoder count
+cmdenl=[hex2dec('7E'),00,10, 01, 00, 00, 00 , 00, 78, 69, 88, 146, 90,-217];
+
+Right encoder count
+cmdenr=[hex2dec('7E'),00,10, 01, 00, 00, 00 , 00, 78, 69, 88, 147, 90,-218];
+
+Clear encoder count
+cmden=[hex2dec('7E'),00,10, 01, 00, 00, 00 , 00, 78, 69, 88, 140, 0,-121];

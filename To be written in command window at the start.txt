@@ -1,0 +1,4 @@
+%To be written in command window once at the start
+
+s = serial('/dev/ttyUSB0','BaudRate',57600,'DataBits',8);
+fopen(s);
