@@ -10,16 +10,16 @@ cmdrv=[hex2dec('7E'),00,10, 01, 00, 00, 00 , 00, 78, 69, 88, 155, 0,-136];
 cmdsafe=[hex2dec('7E'),00,10, 01, 00, 00, 00 , 00, 78, 69, 88, 137, 0,-118];
 cmden=[hex2dec('7E'),00,10, 01, 00, 00, 00 , 00, 78, 69, 88, 140, 0,-121];
 
-t_turn1 = 6.7;
+t_turn1 = 6.69;
 t_straight = 3.7;
 pwm_wheels_straight = 70;
 pwm_r_wheel_turn = 90;
-pwm_l_wheel_turn = 60;
+pwm_l_wheel_turn = 62;
 
 fwrite(s,cmdsafe)
 fwrite(s,cmdm)
 
-for j=1:10
+for j=1:2
     
     cmdl=[hex2dec('7E'),00,10, 01, 00, 00, 00 , 00, 78, 69, 88, 149, pwm_wheels_straight,(-130-pwm_wheels_straight)];
     cmdr=[hex2dec('7E'),00,10, 01, 00, 00, 00 , 00, 78, 69, 88, 150, pwm_wheels_straight,(-131-pwm_wheels_straight)];

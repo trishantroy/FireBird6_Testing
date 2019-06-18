@@ -1,6 +1,6 @@
-clear all
-s = serial('/dev/ttyUSB2','BaudRate',57600,'DataBits',8);
-fopen(s);
+% clear all
+% s = serial('/dev/ttyUSB2','BaudRate',57600,'DataBits',8);
+% fopen(s);
 
 cmd2=[hex2dec('7E'),00,10, 01, 00, 00, 00 , 00, 78, 69, 88, 148, 01,-130];
 cmd1=[hex2dec('7E'),00,10, 01, 00, 00, 00 , 00, 78, 69, 88, 148, 02,-131];
@@ -16,12 +16,11 @@ cmdenl=[hex2dec('7E'),00,10, 01, 00, 00, 00 , 00, 78, 69, 88, 146, 90,-217];
 cmdenr=[hex2dec('7E'), 00, 10, 01, 00, 00, 00 , 00, 78, 69, 88, 147, 90,-218];
 cmden=[hex2dec('7E'),00,10, 01, 00, 00, 00 , 00, 78, 69, 88, 140, 0,-121];
 
-t_straight=8.0;
-t_back=8.0;
+t_straight=5.5;
+t_back=5.5;
 
 fwrite(s,cmdsafe)
 fwrite(s,cmdm)
-fwrite(s,cmden)
 
 for i=1:6
     cmdl=[hex2dec('7E'),00,10, 01, 00, 00, 00 , 00, 78, 69, 88, 149, 70,-200];
